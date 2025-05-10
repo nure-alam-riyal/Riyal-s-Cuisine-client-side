@@ -1,3 +1,6 @@
+
+
+import PropTypes from "prop-types";
 import { Slide } from "react-awesome-reveal";
 
 const SectionHeader = ({title,subTitle}) => {
@@ -15,5 +18,8 @@ const SectionHeader = ({title,subTitle}) => {
         </div>
     );
 };
-
+SectionHeader.propTypes={
+     title: PropTypes.string,
+     subTitle: PropTypes.string
+}
 export default SectionHeader;

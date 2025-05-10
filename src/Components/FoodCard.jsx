@@ -15,11 +15,13 @@ const FoodCard = ({ food }) => {
                     src={foodPhoto}
                     alt={foodName}/>
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">Food Name:{foodName}</h2>
+            <div className="card-body flex">
+               <div className='flex-1'>
+                 <h2 className="card-title">Food Name:{foodName}</h2>
                 <p>Food Category:{foodCategory}</p>
                 <div className='flex justify-between'><p>Purchesed:{purchaseCount}</p> <p>Quantity:{foodQuantity}</p></div>
-                <div className="card-actions justify-end">
+               </div>
+                <div className="card-actions justify-end bottom">
                     <Link to={`/food/${_id}`}><button className="btn btn-primary">Details</button></Link>
                 </div>
             </div>

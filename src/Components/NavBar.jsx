@@ -81,9 +81,9 @@ const NavBar = () => {
       </ul>
     </div>
                         
-                        <Link onClick={ LogOut} className="btn font-bold text-lg bg-blue-300" to='login'>Log Out</Link></div>
+                        <Link onClick={ LogOut} className="btn font-bold text-lg border border-blue-500" to='login'>Log Out</Link></div>
                     :
-                    <div><Link className="btn text-lg font-bold bg-blue-300" to='login'>Log In</Link></div>
+                    <div><Link className="btn text-lg font-bold border border-blue-500" to='login'>Log In</Link></div>
                 }
             </div>
         </div>
