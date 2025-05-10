@@ -7,8 +7,11 @@ import WecomeMyResturant from "../Components/WecomeMyResturant";
 import NavBar from "../Components/NavBar";
 import logo from '../assets/bgImages/logo.png'
 import MenuSection from "../Components/MenuSection";
-import { Slide } from "react-awesome-reveal";
+// import { Slide } from "react-awesome-reveal";
 import { Helmet } from "react-helmet";
+import SectionHeader from "../Components/SectionHeader";
+import SalesPromotion from "../Components/SalesPromotion";
+import SeasonalDelights from "../Components/SeasonalDelights";
 
 
 
@@ -32,18 +35,10 @@ const Home = () => {
                 <Slider></Slider>
             </section>
             <section>
-            <div> <div className="flex justify-center items-center text-center  mt-6 mb-10">
-                    <div className="md:w-2/3">
-                    <Slide direction="right">
-                        <h2 className="font-bold font-Handlee   text-3xl">Top Food Item</h2>
-                        <p className="my-4"> A highly popular or frequently consumed dish or ingredient, often celebrated for its taste, nutritional value, or cultural significance in a specific context.</p>
-                        </Slide>
-                     </div>
-                </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <SectionHeader title={'Top Food Item'} subTitle={'A highly popular or frequently consumed dish or ingredient, often celebrated for its taste, nutritional value, or cultural significance in a specific context.'}></SectionHeader>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                     {
-                             toppurchesfood.map(food=><FoodCard key={food._id} food={food}></FoodCard>)
+                             toppurchesfood.slice(0,4).map(food=><FoodCard key={food._id} food={food}></FoodCard>)
 
                     }
                 </div>
@@ -55,7 +50,13 @@ const Home = () => {
             <div>
                 <MenuSection></MenuSection>
             </div>
-            <section className="bg-green-100 my-5 rounded-lg">
+            <section>
+                <SeasonalDelights></SeasonalDelights>
+            </section>
+            <section>
+                <SalesPromotion></SalesPromotion>
+            </section>
+            <section className="bg-slate-50 my-5 rounded-lg">
                 <div> <div className="flex justify-center items-center text-center py-3  mt-6 mb-10">
                     <div className="md:w-2/3 text-center">
                         <div className="flex justify-center my-2"><img className="w-40 h-32 object-cover rounded-full" src={logo} alt="" /></div>
