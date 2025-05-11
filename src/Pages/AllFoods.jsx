@@ -29,7 +29,7 @@ const AllFoods = () => {
 
         //    }
     }, [search, maxProduct, bestSale, highPrice])
-    console.log(highPrice)
+    // console.log(highPrice)
     return (
         <section>
             <Helmet>

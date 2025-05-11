@@ -30,6 +30,9 @@ const UpdateFoodadded = () => {
                   navigate('/myfoods')
         }})  
           
+
+
+        
     }
     return (
         <div className="flex justify-center my-6">

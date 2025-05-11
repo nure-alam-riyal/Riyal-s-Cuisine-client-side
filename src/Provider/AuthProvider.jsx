@@ -48,7 +48,9 @@ const AuthProvider = ({ children }) => {
                 {withCredentials:true}
             ).then(res=>{
                     setLoading(false)
-                console.log(res.data)})
+                // console.log(res.data)
+                }
+                )
                 
                 
             }
@@ -57,7 +59,7 @@ const AuthProvider = ({ children }) => {
                 withCredentials:true
             }).then(res=>{
                 setLoading(false)
-                console.log(res.data)
+                // console.log(res.data)
             })
            }
             // console.log(currentUser)

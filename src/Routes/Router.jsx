@@ -63,6 +63,7 @@ const router = createBrowserRouter([
                 loader:({params})=>fetch(`https://riyal-s-cuisine-sever-side.vercel.app/food/${params.id}`)
 
             },{
+                
                 path:"/update/:id",
                 element:<PrivateRouter><UpdateFoodadded></UpdateFoodadded></PrivateRouter>,
                 loader:({params})=>fetch(`https://riyal-s-cuisine-sever-side.vercel.app/food/${params.id}`)
