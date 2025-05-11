@@ -3,7 +3,7 @@ import useAuthContext from "./AuthContext";
 import { useEffect } from "react";
 
 const instanceAxios = axios.create({
-    baseURL: 'https://resturant-management-server-side.vercel.app',
+    baseURL: 'https://resturant-management-server-side.vercel.app/',
     withCredentials:true
   });
 const useAxiosSecure = () => {
