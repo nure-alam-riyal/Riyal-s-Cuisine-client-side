@@ -22,7 +22,7 @@ import SeasonalDelights from "../Components/SeasonalDelights";
 const Home = () => {
     const [toppurchesfood,setTopPurchesFoods]=useState([])
     useEffect(()=>{
-        axios.get('https://resturant-management-server-side.vercel.app/foods')
+        axios.get('https://riyal-s-cuisine-sever-side.vercel.app/foods')
         .then(res=>setTopPurchesFoods(res.data))
     },[])
     return (

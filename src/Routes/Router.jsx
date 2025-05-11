@@ -55,17 +55,17 @@ const router = createBrowserRouter([
             },{
                 path:'food/:id',
                 element:<SingleFood></SingleFood>,
-                loader:({params})=>fetch(`https://resturant-management-server-side.vercel.app/food/${params.id}`)
+                loader:({params})=>fetch(`https://riyal-s-cuisine-sever-side.vercel.app/food/${params.id}`)
 
             },{
                 path:'/purchase/:id',
                 element:<PrivateRouter><PurcheasePages></PurcheasePages></PrivateRouter>,
-                loader:({params})=>fetch(`https://resturant-management-server-side.vercel.app/food/${params.id}`)
+                loader:({params})=>fetch(`https://riyal-s-cuisine-sever-side.vercel.app/food/${params.id}`)
 
             },{
                 path:"/update/:id",
                 element:<PrivateRouter><UpdateFoodadded></UpdateFoodadded></PrivateRouter>,
-                loader:({params})=>fetch(`https://resturant-management-server-side.vercel.app/food/${params.id}`)
+                loader:({params})=>fetch(`https://riyal-s-cuisine-sever-side.vercel.app/food/${params.id}`)
             }
         ]
     }

@@ -15,7 +15,7 @@ const AllFoods = () => {
     const [toppurchesfood, setTopPurchesFoods] = useState([])
 
     useEffect(() => {
-        axios.get('https://riyal-s-cuisine-sever-side.vercel.app/FFallfoods', {
+        axios.get('https://riyal-s-cuisine-sever-side.vercel.app/allfoods', {
             withCredentials: true
         })
             .then(res => setTopPurchesFoods(res.data))
@@ -89,4 +89,4 @@ const AllFoods = () => {
 };
 
 export default AllFoods;
-// https://resturant-management-server-side.vercel.app/
+// https://riyal-s-cuisine-sever-side.vercel.app/

@@ -44,7 +44,7 @@ const AuthProvider = ({ children }) => {
             setUser(currentUser)
             if(currentUser){
                 const user={email:currentUser?.email}
-                axios.post('https://resturant-management-server-side.vercel.app/jwt',user,
+                axios.post('https://riyal-s-cuisine-sever-side.vercel.app/jwt',user,
                 {withCredentials:true}
             ).then(res=>{
                     setLoading(false)
@@ -53,7 +53,7 @@ const AuthProvider = ({ children }) => {
                 
             }
            else{
-            axios.post('https://resturant-management-server-side.vercel.app/logout',{},{
+            axios.post('https://riyal-s-cuisine-sever-side.vercel.app/logout',{},{
                 withCredentials:true
             }).then(res=>{
                 setLoading(false)

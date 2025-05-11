@@ -36,7 +36,7 @@ const MyOders = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`https://resturant-management-server-side.vercel.app/purchaseFood/${id}`,).then(()=>{
+                axios.delete(`https://riyal-s-cuisine-sever-side.vercel.app/purchaseFood/${id}`,).then(()=>{
                     // console.log(res.data)
                    MyOrderFoods()
                    Swal.fire({

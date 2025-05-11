@@ -22,7 +22,7 @@ const UpdateFoodadded = () => {
         addedInfo.foodQuantity=parseFloat(addedInfo.foodQuantity)
       
          addedInfo.purchaseCount=purchaseCount
-        axios.put(`https://resturant-management-server-side.vercel.app/update/${id}`,addedInfo,{
+        axios.put(`https://riyal-s-cuisine-sever-side.vercel.app/update/${id}`,addedInfo,{
             withCredentials:true
         })
         .then(res=>{if(res.data){
