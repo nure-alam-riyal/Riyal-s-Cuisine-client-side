@@ -26,6 +26,10 @@ const Home = () => {
         .then(res=>setTopPurchesFoods(res.data))
     },[])
     return (
+
+
+
+        
         <div>
             <Helmet>
     <title>Riyal`s Cuisine</title>
