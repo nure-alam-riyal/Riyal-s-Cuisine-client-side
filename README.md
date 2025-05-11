@@ -4,7 +4,7 @@ Here's an updated README with **enhanced features** and all necessary details:
 # Riyal's Cuisine Restaurant 🍽️  
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](riyal-s-cuisine-client-side.vercel.app)  
-[![Server Repo](https://img.shields.io/badge/GitHub-Server-blue)]([https://riyal-s-cuisine-sever-side.vercel.app](https://github.com/nure-alam-riyal/Riyal-s-Cuisine-sever-side)/)  
+[![Server Repo](https://img.shields.io/badge/GitHub-Server-blue)]((https://github.com/nure-alam-riyal/Riyal-s-Cuisine-sever-side))  
 
 ## 📌 Introduction  
 **Riyal's Cuisine Restaurant** is a **restaurant management system** built using the **MERN stack**.  
