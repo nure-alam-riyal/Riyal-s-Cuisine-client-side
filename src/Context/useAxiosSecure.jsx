@@ -9,6 +9,8 @@ const instanceAxios = axios.create({
 const useAxiosSecure = () => {
   const { LogOut } = useAuthContext()
 
+
+  
   useEffect(() => {
 
     axios.interceptors.response.use(function (response) {
