@@ -3,8 +3,8 @@ Here's an updated README with **enhanced features** and all necessary details:
 ```markdown
 # Riyal's Cuisine Restaurant 🍽️  
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://resturant-management-106b2.web.app/)  
-[![Server Repo](https://img.shields.io/badge/GitHub-Server-blue)](https://github.com/programming-hero-web-course2/b10a11-server-side-nure-alam-riyal)  
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](riyal-s-cuisine-client-side.vercel.app)  
+[![Server Repo](https://img.shields.io/badge/GitHub-Server-blue)](https://riyal-s-cuisine-sever-side.vercel.app/)  
 
 ## 📌 Introduction  
 **Riyal's Cuisine Restaurant** is a **restaurant management system** built using the **MERN stack**.  
